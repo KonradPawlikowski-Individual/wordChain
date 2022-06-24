@@ -13,3 +13,11 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 // begin
 server.listen(PORT, () => console.log(`server started successfully on port ${PORT}!`))
+
+// handle connections
+
+io.on('connection', socket => {
+    socket.on('submitWord', (word) => {
+        io.emit('submitWord',word)
+    })
+})

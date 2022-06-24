@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Word Chain</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Word Chain</h1>
+        <div id="loginDisplay">
+            <h5>username: </h5><input id="username" type="text" placeholder="John Doe" autofocus>
+        </div>
+
+        <div id="lobbyDisplay" hidden>
+
+        </div>
+
+        <div id="gameDisplay" hidden>
+            <div><h5 id="lastWord">past</h5><input id="word" type="text" placeholder="t" autocomplete="off"></div>
+            <div id="wordBox"> <div class="word" id="past">past</div> </div>
+        </div>
+    </body>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</html>

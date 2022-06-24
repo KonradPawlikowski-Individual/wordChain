@@ -1,0 +1,34 @@
+body {
+    background-color: #eeeee4;
+    color: #21130d;
+    text-align: center;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1em;
+}
+
+#gameDisplay {
+    flex-direction: column;
+}
+
+#wordBox {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0.2em;
+    margin: 0.1em;
+    color: #873E23;
+    flex-wrap: wrap;
+}
+
+.repeat{
+    color:red;
+}
+
+[hidden]{
+    display:none;
+  }
