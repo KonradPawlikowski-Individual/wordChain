@@ -12,4 +12,4 @@ const io = socket(server)
 app.use(express.static(path.join(__dirname, 'public')))
 
 // begin
-server.listen(PORT, () => console.log('working'))
+server.listen(PORT, () => console.log(`server started successfully on port ${PORT}!`))
